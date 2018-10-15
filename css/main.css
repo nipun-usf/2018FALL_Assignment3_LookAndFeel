@@ -1,47 +1,129 @@
-/**
-Sample css code
-*/
-/* Set height to 100% for body and html to enable the background image to cover the whole page: */
-body,
-html {
-  height: 100%;
+body {
+    font-size: 15px;
+    font-family: "Trebuchet MS", Verdana, Helvetica, Sans-Serif;
+    color: #232323;
+    background-color: #fff;
 }
 
-/*Set background image*/
-.container {
-  background-image: url('https://doc-10-ao-docs.googleusercontent.com/docs/securesc/ha0ro937gcuc7l7deffksulhg5h7mbp1/r085o9ungppbiokopob2sfbekae4uqbb/1537920000000/14802840322886517493/*/110cT8sl-pOiHGgj9yToPkAqAzrr-RNfb');
-  height: 100%;
-  background-position: center;
-  background-size: cover;
+#header {
+    background-color: #007953;
+    color: white;
+    padding: 1px;
+    text-align: center;
 }
 
-/* Position text in the middle */
-.middle {
-  position: absolute;
-  color: beige;
-  top: 70%;
-  left: 39%;
-  text-align: center;
-  font-size: 25px;
+#footer {
+    text-align: center;
+    clear: both;
+    font-size: x-small;
 }
 
-/*Set circle in unordered list*/
-.middle ul {
-  list-style-type: circle;
+header,
+footer,
+nav,
+section {
+    display: block;
 }
 
-/*Set text inside li tag to left*/
-.middle ul li {
-  text-align: left !important;
+* {
+    box-sizing: border-box
 }
 
-/*Set text color for a tag inside middle class and ul>li element*/
-.middle ul li a {
-  color: beige;
+/* Set height of body and the document to 100% */
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial;
 }
 
-/*Change text color and decoration for a tags inside middle class and ul>li element*/
-.middle ul li a:hover {
-  color: red;
-  text-decoration: none;
+/* Style tab links */
+.tablinks {
+    background-color: #3b3a30;
+    color: white;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-size: 17px;
+    width: 20%;
+}
+
+    .tablinks:hover {
+        background-color: #777;
+    }
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+    color: black;
+    display: none;
+    padding: 100px 20px;
+    height: 100%;
+}
+
+/* On devices with screens 600px wide or less, menu links should stack on top of each other instead being next to each other */
+@media screen and (max-width: 600px) {
+    .tablinks, .tabcontent, .foot {
+        float: none;
+        width: 100%;
+        font-size: 18px;
+    }
+}
+
+img, iframe {
+    max-width: 100%;
+}
+
+#About {
+    background-color: #80ced6;
+}
+
+#Effects {
+    background-color: #ff6a43;
+}
+
+#Metrics {
+    background-color: #d9ad7c;
+}
+
+#Shortcomings {
+    background-color: orange;
+}
+
+#Reflections {
+    background-color: #c8c3cc;
+}
+
+.taleof {
+    width: 600px;
+    height: 600px;
+}
+
+.imghomerun {
+    width: 600px;
+    height: 500px;
+}
+
+.imgsweetspot {
+    width: 600px;
+    height: 500px;
+    text-align: right;
+}
+
+.imgstatcast {
+    width: 1200px;
+    height: 900px;
+    text-align: center;
+}
+
+.imgvelocity {
+    width: 500px;
+    height: 500px;
+    text-align: right;
+}
+
+ol > li {
+    padding-bottom: 4px;
+    padding-top: 4px;
+    font-weight: bold;
 }

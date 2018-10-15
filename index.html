@@ -1,1 +1,314 @@
-<!--Your HTML code here-->
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" content="no-cache" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Baseball Analytics</title>
+
+    <script type="text/javascript" src="js/main.js"></script>
+    <link href="css/main.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body>
+    <div id="header" style="text-decoration: none; color: white; text-align: center;">
+        <h1>Baseball Analytics</h1>
+    </div>
+
+    <div id="maincontent">
+
+        <div id="tabs">
+            <button id="defaultOpen" class="tablinks" onclick="openTab('About', this, '#80ced6')">About</button>
+            <button class="tablinks" onclick="openTab('Effects', this, '#ff6a43')">Effects</button>
+            <button class="tablinks" onclick="openTab('Metrics', this, '#d9ad7c')">Metrics</button>
+            <button class="tablinks" onclick="openTab('Shortcomings', this, 'orange')">Shortcomings</button>
+            <button class="tablinks" onclick="openTab('Reflections', this, '#c8c3cc')">Reflections</button>
+        </div>
+
+        <div id="About" class="tabcontent">
+            <h2> <u> What is baseball analytics? </u> </h2>
+            <p>
+                Sabermetrics or baseball analytics is the practice of applying statistical methods to come up with insights on the game
+                of baseball, which might help players at improving their game. Possibly the greatest implementation of this is Statcast,
+                a high speed and high accuracy, automated tool developed to analyze player movements and athletic abilities.
+                It is a network of optical cameras that track vital statistics such as exit velocity and launch angles to gain useful
+                insights.
+                <br>
+                <br>
+                So, if ever in broadcast booths, on scoreboards and on Twitter, you see a wave of new information sweeping across Major League
+                Baseball which tells us that Carter Capps's leaping delivery increases his effective velocity and that Giancarlo Stanton
+                hits the ball really hard, those numbers are all courtesy of MLB's Statcast system - which uses an array of radar equipment
+                and high-resolution cameras to track every object and person on the baseball field.
+                <br>
+                <br>
+                Check out the video to see the shiny tech in action!
+                <br>
+                <br>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/RVu5tEeOeEU?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                <h2> <u>  Why use Statcast? </u> </h2>
+
+                Each MLB organization now has an analytics team that uses Statcast data to gain a competitive advantage and Stacast
+                has replaced traditional metrics and coaching methodologies. It can also be used to prevent injuries during the season
+                by tracking physical performance metrics. For more information check out this excellent
+                <a href=" https://en.wikipedia.org/wiki/Statcast" target="_blank"> <u> Wiki page. </u> </a>
+                <br>
+                <br>
+                Statcast has truly changed MLB. Apat from teams incorporating the Statcast numbers into fancy simulations to
+                evaluate prospective acquisitions, fans and writers are dissecting elements of the same data to judge those
+                acquisitions while broadcasters are talking their way through replays and overlays sprinkled with Statcast graphics.
+                <br>
+                <br>
+                In the following section we discuss how baseball players have suddenly become obsessed with
+                <a href=" http://m.mlb.com/glossary/statcast/launch-angle " target="_blank"> <u> launch angles </u> </a>
+                and <a href=" http://m.mlb.com/glossary/statcast/exit-velocity " target="_blank"> <u> exit velocity. </u> </a>
+                <h2> <u>  A tale of angles and velocities  </u> </h2>
+            </p>
+            <p>
+                Launch angle measures the vertical direction of the ball coming off the bat; a launch angle of zero degrees would
+                be a flat line, with positive numbers indicating an upward ball flight and negative ones indicating a ball driven
+                into the ground. Hitters with high launch angles tend to be sluggers who produce lots of fly balls (and, sometimes, pop-ups).
+                Kris Bryant was one of the league leaders in launch angle in 2015, with an average angle of 19.2 degrees.
+                Conversely, low launch angles tend to be the domain of quick, slap-hitting middle infielders who generate lots of ground
+                balls. Dee Gordon, for example, was toward the low end of the spectrum with an average launch angle of 2.9 degrees.
+                <br>
+                <br>
+                Exit velocity, on the other hand, represents the speed at which a ball leaves the bat. Although it was unofficially
+                available from some websites last year, MLB officially packaged and released exit velocity alongside launch angle on April 7,
+                effectively giving us a detailed measure of how hard each ball was hit. Unsurprisingly, at the top of last season's exit
+                velocity leaderboards you'll find the game's greatest sluggers - such as Stanton (99.1 mph), Miguel Cabrera (95.1)
+                and Jose Bautista (94.3) - pounding out average exit velocities well north of 90 miles per hour.
+                <br>
+                <br>
+                We learned last season that exit velocity alone was modestly useful, but it becomes exponentially more powerful when
+                combined with launch angle data. These two numbers together can tell us a great deal about what's likely to happen after
+                bat meets ball.
+                <br>
+                <h4> Launch Angle v/s Exit-Velocity Infographic  </h4>
+                <img class="taleof" src="img/tale_of.png" alt="exit velocity v/s launch-angle">
+                <br>
+                <br>
+                The article throws up an interesting point. The number of home runs hit ever since the introduction of Statcast
+                has gone up significantly. Statcast's data confirms this, where the number went up by 1400 in just two seasons
+                from 2014 to 2016. Analysts have been an able to pinpoint that a range of 25-35 degrees launch angle when coupled
+                with an exit velocity of 95mph or greater has been known to be most effective. Players seem to have taken note of
+                the data provided by Statcast which has led to the rise of the fly-ball trend. The average launch angle in MLB has
+                been rising by an average of 12% every year, from 10.5 degrees in 2015 to 12.8 degrees in 2017.
+            </p>
+        </div>
+
+        <div id="Effects" class="tabcontent">
+            <h2> <u>Effect and Influence</u> </h2>
+            <br>
+
+            <img class="imghomerun" src="img/homeruns_increase100.jpg" alt="sweet spot">
+            <img class="imgsweetspot" src="img/sweet_spot.png" alt="increase in homeruns">
+            <br>
+            <br>
+            <p>
+                The vertical bars in orange represent the all-time high number of homeruns scored in baseball.
+                The first bar represent the year 2000 where major changes in baseball rules where introduced while the second
+                highlights the year 2016, a year after Statcast was introduced.
+            </p>
+
+            <p>
+                There's evidence of the same, where Daniel Murphy in his last season with the Mets had a flyball rate of 36% and a
+                groundball rate of 42.8% but essentially changed his groundball-flyball ratio to 36.3 and 41.9, respectively.
+                This led to him batting with 25 homers, 104 RBI and finishing runner-up in MVP voting. The reason behind the change is evident
+                from his average launch angle that went from 11.1 degrees in 2015 to 16.6 degrees in 2016. Daniel's teammate Anthony Rendon
+                seems to have followed a similar approach where his launch angle went from 10.6 degrees to 16.8 degrees. It seems like,
+                every batter in baseball today, is now obsessed with finding the right angle and trying to hit the ball higher.
+                <br>
+                <br>
+                Below is a table showing statcast data about top 25 batters. Statistics like these have noe hit mainstream and are now a
+                common feature of websites like <a href=" https://baseballsavant.mlb.com/" target="_blank"> Baseball Savant </a>.
+            </p> <br>
+
+            <img class="imgstatcast" src="img/statcast table.png" alt="Statcast Top 25 batters table">
+        </div>
+
+        <div id="Metrics" class="tabcontent">
+            <h2> <u> Why both Statistics are not independent of each other? </u> </h2>
+            <img class="imgvelocity" src="img/velocity_important.png" alt="importance of velocity">
+            <p>
+                Just banking on one statistic, without accounting for the other can be disastrous as shown by the infographic below:
+                <br>
+                The success of a ball struck at a more intermediate angle varies and depends a lot on it's exit velocity. At any particular
+                launch angle, the number of runs added varies. Low-exit velocities may result in short-hoppers to the infielders, an easy out.
+                As batters hit the balls harder, the expected runs line rises sharply and eventually the balls start sailing over the heads
+                of infielders for singles. Surprisingly, we see a drop in between, as the hits now travel to the outfielders and after a
+                certain point the expected run added rate increases exponentially as balls hit at an exit-velocity more than 95mph become
+                doubles and eventually home runs.
+            </p>
+            <br>
+            <br>
+            The table below is a representation of the Statcast Leaderboard sourced from
+            <a href=" http://m.mlb.com/statcast/leaderboard#hr-distance " target="_blank"> <u> mlb.com </u> </a>
+            <br>
+            <table>
+                <thead>
+                    <tr>
+                        <th> Batter Name </th>
+                        <th> &nbsp Distance (feet) </th>
+                        <th> &nbsp Exit Velocity (mph) </th>
+                        <th> &nbsp Launch Angle (deg) </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td> Wilson Contreras </td>
+                        <td> &nbsp 491 </td>
+                        <td> &nbsp 110.6 </td>
+                        <td> &nbsp 26.5 </td>
+                    </tr>
+                    <tr>
+                        <td> George Springer </td>
+                        <td> &nbsp 448 </td>
+                        <td> &nbsp 111.9 </td>
+                        <td> &nbsp 26.7 </td>
+                    </tr>
+                    <tr>
+                        <td> Chris Taylor </td>
+                        <td> &nbsp 447 </td>
+                        <td> &nbsp 106.7 </td>
+                        <td> &nbsp 31.6 </td>
+                    </tr>
+                    <tr>
+                        <td> Chris Taylor </td>
+                        <td> &nbsp 444 </td>
+                        <td> &nbsp 106.4 </td>
+                        <td> &nbsp 27.4 </td>
+                    </tr>
+                </tbody>
+            </table>
+            <p>
+                Chris Taylor, LA Dodgers batter features twice on MLB's list. The table above shows how a difference in 4.2 degrees launch
+                angle made his hit cover a distance of 3 feet more than on the previous hit.
+            </p>
+            <h2> <u> The influence of peers </u> </h2>
+            <p>
+                The early success found by Washington Nationals' Daniel Murphy translated into other teammates like Anthony Rendon following
+                suit. It's not surprising that word of mouth publicity holds such influence as some of the players have been known to trust their
+                teammates whenever taking a potential career changing decision. Player's often build trust around each other which might not be
+                the case if a manager is hurling random numbers in a bid to improve their game.
+            </p>
+            <p>
+                However encouraging all players to change their launch angles can be a disastrous idea.
+                The idea of advocating statistics and numbers to help improve the player's game is commendable.
+                However, it might often be too confusing to some players and might lead them to think more on the pitch.
+                It is more about getting the players to understand their best swing paths individually.
+                If influenced by their peers, a smaller, less powerful guy might be tempted to increase his launch angle.
+                However, he would be missing out on the role played by exit velocity. That's where we must proceed with caution.
+            </p>
+            You can read more about the influence of peers in this excellent article written at fangraphs.com
+            <a href=" https://www.fangraphs.com/blogs/are-early-adopters-of-the-uppercut-influencing-their-clubhouse-peers/ " target="_blank"> here. </a>
+
+            <p>
+                In the end, it is all about using statistics in a bid to improve player's performance wisely.
+                Data from tools like Statcast, when implemented properly can lead the players and their teams to grow significantly,
+                but, it is not a one-size fits all solution.
+            </p>
+        </div>
+
+        <div id="Shortcomings" class="tabcontent">
+            <h2> <u>Shortcomings </u> </h2>
+            Statcast definitely has its flaws.
+            <br>
+            <br>Last August, CBS Sports' Rob Arthur uncovered Statcast's difficulty with tracking batted balls that had
+            "atypical trajectories," a group comprising more than 10 percent of all balls put into play.
+            Perhaps another equally concerning controversy surfaced this April when a league-wide velocity bump was revealed
+            to be a byproduct of MLB changing its measurement preferences from PITCHf/x to Statcast without notice.
+            There's also the matter of ballpark bias as it relates to exit-velocity recordings. Still, MLBAM remains optimistic.
+            <br>
+            <br>
+            MLB.com's Mike Petriello who joined MLB.com after years at his own Los Angeles Dodgers site says he's familiar with the
+            baseball analytics community, and presumably with its desire for a scientific approach to all things.
+            Trust is earned through independent replication and verification, nothing else -- even God has to provide p-values.
+            Predictably, neither Statcast's inaccuracies nor its near-black-box ensconcing have been embraced.
+            Though the unwieldiness of the data (a single game produces more raw data than the Library of Congress adds to its web archive
+            data every month) would make it difficult for most public-facing analysts to manage, everyone wants the opportunity
+            to look for themselves.
+            <h2> <u>References </u> </h2>
+            This project wouldn't have been possible without browsing through the following
+            websites:
+            <br>
+            <br>
+            1) <a href=" https://fivethirtyeight.com/features/the-new-science-of-hitting/ " target="_blank">
+                <u> https://fivethirtyeight.com/features/the-new-science-of-hitting/ </u>
+            </a>
+            <br>
+            2) <a href=" https://en.wikipedia.org/wiki/Statcast " target="_blank"> <u> https://en.wikipedia.org/wiki/Statcast </u> </a>
+            <br>
+            3) <a href=" https://www.cbssports.com/mlb/news/how-statcast-has-changed-mlb-and-why-not-everybody-seems-all-that-happy-about-it/ " target="_blank"> <u> https://www.cbssports.com/mlb/news/how-statcast-has-changed-mlb-and-why-not-everybody-seems-all-that-happy-about-it/ </u> </a>
+        </div>
+
+        <div id="Reflections" class="tabcontent">
+            <h2> <u> Assignment Reflections </u> </h2>
+            <p>This assignment was helpful in learning <b>HTML</b>, <b>CSS</b>, <b>UI Design principles</b> and little bit of <b>JavaScript</b>.</p>
+            <p>Below are the components that played part in bringing together this website -</p>
+            <ol type="1">
+                <li>Responsiveness</li>
+                <content>
+                    On devices with screens 600px wide or less (mobile and tablets), menu links should stack on top of each other
+                    instead being next to each other. For this, we used media queries in CSS and meta viewport tag.
+                </content>
+                <li>Usability</li>
+                <content>
+                    We created tabs with easy-to-understand tab headings to navigate across pages in website.
+                    The page content is logically separated by tabs.
+                </content>
+                <li>Content</li>
+                <content>
+                    The theme of our website is Baseball Analytics. Our website gives a jumpstart to understand all about baseball analytics.
+                    Apart from text, we have embedded videos and images to communicate the content better.
+                </content>
+                <li>Design</li>
+                <content>For designing, we used below best practices from the links you shared with assignment instructions. </content>
+                <content>
+                    <p>
+                        i) Used relative sizes for images (width: 50% instead of 500px to prevent overflowing of content).
+                        Referenced from this
+                        <a href=" https://developers.google.com/web/fundamentals/design-and-ux/responsive/images " target="_blank"> <u>link</u></a>.
+                    </p>
+                </content>
+                <content>
+                    <p>
+                        ii) Used background colour instead of using image as a background so that it works well on mobile and tablets.
+                        Referenced from this
+                        <a href=" https://developers.google.com/web/fundamentals/design-and-ux/responsive/content " target="_blank"> <u>link</u></a>.
+                    </p>
+                </content>
+                <content>
+                    <p>
+                        iii) Optimize text for reading. Referenced from this
+                        <a href=" https://developers.google.com/web/fundamentals/design-and-ux/responsive/ " target="_blank"> <u>link</u></a>.
+                    </p>
+                </content>
+            </ol>
+            <p>
+                The <b>GitHub link</b> for the assignment code and files can be found
+                <a href=" https://github.com/nipun-usf/2018FALL_Assignment3_LookAndFeel " target="_blank"> <u>here</u></a>.
+            </p>
+            <h3>Assignment Contributers (Group 17):</h3>
+            <ol type="1">
+                <li>Ankit Singh</li>
+                <li>Harish Yadav</li>
+                <li>Nipun Soni</li>
+            </ol>
+        </div>
+
+        <div id="script">
+            <script>
+                // Get the element with id="defaultOpen" and click on it. Placed this inside page for fast load of tab on page load
+                document.getElementById("defaultOpen").click();
+            </script>
+        </div>
+
+    </div>
+
+    <div id="footer" class="foot">
+        <p>2018 - &copy; Group 17 - For DIS Course Fall 2018 @ University of South Florida</p>
+    </div>
+
+</body>
+</html>
